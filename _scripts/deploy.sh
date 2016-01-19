@@ -10,5 +10,5 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
   git commit -m "Deploy"
   git push --force --quiet "https://${git_user}:${git_password}@${git_target}" master:gh-pages > /dev/null 2>&1
 elif [ "$TRAVIS_TAG" ]; then
-  gulp deploy:prod --hostname=${prod_url} --directory=${prod_dir} --user=${prod_username} --password=${prod_password}
+  gulp deploy:prod --hostname=${prod_host} --directory=${prod_dir} --user=${prod_user} --password=${prod_password}
 fi
