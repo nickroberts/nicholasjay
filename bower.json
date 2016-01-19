@@ -1,0 +1,23 @@
+{
+  "name": "nicholasjay.com",
+  "homepage": "nicholasjay.com",
+  "authors": [
+    "Nick Roberts <djparadyme@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "~6.1.1",
+    "motion-ui": "~1.1.1",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}

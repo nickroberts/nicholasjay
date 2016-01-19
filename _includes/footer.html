@@ -1,0 +1,14 @@
+<footer>
+  <div class="row expanded">
+    <div class="large-12 columns">
+      <h2>{{ site.title }}: <small>{{ site.description }}</small></h2>
+      <ul class="social-menu no-bullet">
+        {% for social_item in site.social %}
+          <li><a href="{{ social_item.url }}" title="{{ social_item.username }} on {{ social_item.name }}" target="_blank"><i class="fa fa-2x fa-{{ social_item.name }}"></i></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ site.baseurl }}/js/app.min.js"></script>

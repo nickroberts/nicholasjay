@@ -1,0 +1,5 @@
+- title: "About"
+  href: "/about/"
+  subnav:
+    - title: "About Us"
+      href: "/about/us/"

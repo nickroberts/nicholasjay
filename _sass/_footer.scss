@@ -1,0 +1,31 @@
+// This code is here for the sticky footer
+html {
+  position: relative;
+  min-height: 100%;
+  height: auto;
+}
+body {
+  margin: 0 0 100px;
+  height: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: #121212;
+  color: #ccc;
+
+  // animation-duration: 1s;
+  // transition-timing-function: ease-in-out;
+  // @include mui-animation(slide(in, up), fade);
+  // @include mui-animation(hinge(in, bottom, edge), fade);
+  .social-menu {
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+  }
+}

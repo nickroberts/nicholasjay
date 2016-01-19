@@ -1,0 +1,24 @@
+<header>
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu data-disable-hover>
+        <li class="menu-text"><a href="{{ site.baseurl }}/">{{ site.title }}</a></li>
+        {% for nav_item in site.data.nav %}
+          {% if nav_item.subnav != null %}
+            <li class="has-submenu">
+              <a href="{{ nav_item.href | prepend: site.baseurl }}">{{ nav_item.title }}</a>
+              <ul class="submenu menu vertical" data-submenu>
+                {% for subnav_item in nav_item.subnav %}
+                  <li><a href="{{ subnav_item.href | prepend: site.baseurl }}">{{ subnav_item.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li><a href="{{ nav_item.href | prepend: site.baseurl }}">{{ nav_item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      </ul>
+    </div>
+  </div>
+</header>
