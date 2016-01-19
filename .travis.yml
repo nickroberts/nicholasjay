@@ -22,9 +22,3 @@ deploy:
     on:
       branch: master
       tags: true
-notifications:
-  pushover:
-    api_key: $pushover_app
-    users:
-      - $pushover_user
-    template: "%{repository} (%{commit}) : %{message} %{foo} - Build details: %{build_url}"
