@@ -95,12 +95,12 @@ function build(done) {
   if (browserSync.instance.active) {
     browserSync.notify(config.messages.jekyllBuild);
   }
-  var buildOptions = ['build'];
+  var buildOptions = ['exec', 'jekyll', 'build'];
   if (argv.config) {
     buildOptions.push('--config');
     buildOptions.push('_config.yml,_config.' + argv.config + '.yml');
   }
-  cp.spawn('jekyll', buildOptions, {
+  cp.spawn('bundle', buildOptions, {
       stdio: 'inherit',
     })
     .on('close', function() {
